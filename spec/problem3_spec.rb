@@ -5,23 +5,20 @@ RSpec.describe StringWrapper do
 
     describe "#reverse" do
     it "reverses the string" do
-        string.reverse
-        expect(string.reverse).to eq(string.reverse)
+        
+        expect(string.reverse).to eq("dlroW olleh")
     end
     end
 
     describe "#upcase" do
     it "converts the string to uppercase" do
-        string.upcase
-        expect(string.upcase).to eq(string.upcase)
+        expect(string.upcase).to eq("HELLO WORLD")
     end
     end
 
     describe "#downcase" do
     it "converts the string to lowercase" do
-        string.upcase
-        string.downcase
-        expect(string.downcase).to eq(string.downcase)
+        expect(string.downcase).to eq("hello world")
     end
     end
 end
